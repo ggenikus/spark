@@ -85,7 +85,7 @@ public class Spark {
                    =>  ▇▇▇
      * @return
      */
-    static String sparkString(List<Integer> ints, boolean fitMin){
+    public static String sparkString(List<Integer> ints, boolean fitMin){
         final int min = fitMin? min(ints):0;
         final int stepRange = max(ints) - min;
         final String ticks = isToCMD? WINDOWS_CMD_TICKS: TICKS;
